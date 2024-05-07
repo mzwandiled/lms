@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -23,7 +24,9 @@ class UserTableSeeder extends Seeder
                 'email'=>'admin@gmail.com',
                 'password'=> Hash::make('51420841Lu@'),
                 'role'=> 'admin',
-                'status'=> '1'
+                'status'=> '1',
+                'created_at'=> Carbon::now(),
+                'updated_at'=> Carbon::now()
             ],
             //Instructor
             [
@@ -32,7 +35,9 @@ class UserTableSeeder extends Seeder
                 'email'=>'instructor@gmail.com',
                 'password'=> Hash::make('51420841Lu@'),
                 'role'=> 'instructor',
-                'status'=> '1'
+                'status'=> '1',
+                'created_at'=> Carbon::now(),
+                'updated_at'=> Carbon::now()
             ],
             //Instructor
             [
@@ -41,7 +46,9 @@ class UserTableSeeder extends Seeder
                 'email'=>'user@gmail.com',
                 'password'=> Hash::make('51420841Lu@'),
                 'role'=> 'user',
-                'status'=> '1'
+                'status'=> '1',
+                'created_at'=> Carbon::now(),
+                'updated_at'=> Carbon::now()
             ],
         ]);
     }
